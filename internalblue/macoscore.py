@@ -9,13 +9,10 @@ import socket
 import time
 from builtins import str
 
-from future import standard_library
-
 from . import hci
 from .core import InternalBlue
 from .utils.packing import p8
 
-standard_library.install_aliases()
 filepath = os.path.dirname(os.path.abspath(__file__))
 
 IOBE = None

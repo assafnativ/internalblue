@@ -1,7 +1,3 @@
-from future import standard_library
-
-standard_library.install_aliases()
-
 import datetime
 
 from queue import Queue

@@ -16,16 +16,12 @@ from ctypes import *
 
 from typing import List, cast, TYPE_CHECKING
 
-from future import standard_library
-
 from . import hci
 from .core import InternalBlue
 from .utils.packing import p16, u16, p32, u32
 
 if TYPE_CHECKING:
     from internalblue import Device
-
-standard_library.install_aliases()
 
 
 class sockaddr_hci(Structure):

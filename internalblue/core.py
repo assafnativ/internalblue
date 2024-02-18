@@ -37,7 +37,6 @@ from abc import ABCMeta, abstractmethod
 from builtins import hex, str, range, object
 from threading import Thread
 
-from future import standard_library
 from future.utils import with_metaclass
 from past.utils import old_div
 
@@ -50,7 +49,6 @@ from .objects.queue_element import QueueElement
 from .utils import flat, bytes_to_hex
 from .utils.packing import p8, p16, u16, p32, u32, bits, unbits
 from .utils.internalblue_logger import getInternalBlueLogger
-standard_library.install_aliases()
 
 try:
     from typing import List, Optional, Any, TYPE_CHECKING, Tuple, Union, NewType, Callable, cast

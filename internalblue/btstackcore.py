@@ -1,7 +1,5 @@
 #!/usr/bin/env python3
 
-from future import standard_library
-
 import datetime
 import time
 import socket
@@ -10,7 +8,6 @@ import queue as queue2k
 
 from . import hci
 from .core import InternalBlue
-standard_library.install_aliases()
 
 # BTstack Daemon defaults
 BTSTACK_SERVER_HOST = "localhost"
